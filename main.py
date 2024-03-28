@@ -45,8 +45,7 @@ def text_numeral(num):
         90: "ninety"
     }
     if num > 90:
-        while num > 90:
-            num -= 90
+        num -= 90
         word_num = f"{NUM_WORD.get(90)} {NUM_WORD.get(num)}"
     elif num <= 20 or num % 10 == 0:
         word_num = NUM_WORD.get(num)
